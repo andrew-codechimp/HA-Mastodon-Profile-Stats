@@ -1,4 +1,4 @@
-# Integration Blueprint
+# Home Assistant Mastodon Profile Stats Integration
 
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
