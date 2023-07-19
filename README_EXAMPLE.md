@@ -17,9 +17,7 @@ _Integration to integrate with [mastodon_profile_stats][mastodon_profile_stats].
 
 Platform | Description
 -- | --
-`binary_sensor` | Show something `True` or `False`.
 `sensor` | Show info from blueprint API.
-`switch` | Switch something `True` or `False`.
 
 ## Installation
 
