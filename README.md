@@ -8,6 +8,9 @@
 
 [![Community Forum][forum-shield]][forum]
 
+
+**This integration is under early development, unless you see a release I'd advise not trying it.**
+
 _Integration to get profile stats from Mastodon instances._
 
 **This integration will set up the following platforms.**
