@@ -1,8 +1,5 @@
 {
-    "name": "Integration blueprint",
-    "filename": "mastodon_profile_stats.zip",
-    "hide_default_branch": true,
+    "name": "Mastodon Profile Stats",
     "homeassistant": "2023.3.0",
-    "render_readme": true,
-    "zip_release": true
+    "render_readme": true
 }

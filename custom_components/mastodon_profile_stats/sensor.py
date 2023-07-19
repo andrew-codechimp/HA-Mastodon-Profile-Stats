@@ -4,7 +4,7 @@ from __future__ import annotations
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription
 
 from .const import DOMAIN
-from .coordinator import BlueprintDataUpdateCoordinator
+from .coordinator import MastodonProfileStatsUpdateCoordinator
 from .entity import IntegrationBlueprintEntity
 
 ENTITY_DESCRIPTIONS = (
@@ -33,7 +33,7 @@ class IntegrationBlueprintSensor(IntegrationBlueprintEntity, SensorEntity):
 
     def __init__(
         self,
-        coordinator: BlueprintDataUpdateCoordinator,
+        coordinator: MastodonProfileStatsUpdateCoordinator,
         entity_description: SensorEntityDescription,
     ) -> None:
         """Initialize the sensor class."""

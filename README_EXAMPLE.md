@@ -41,7 +41,7 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 
 ***
 
-[mastodon_profile_stats]: https://github.com/ludeeus/mastodon_profile_stats
+[mastodon_profile_stats]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats
 [buymecoffee]: https://www.buymeacoffee.com/ludeeus
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/ludeeus/mastodon_profile_stats.svg?style=for-the-badge
