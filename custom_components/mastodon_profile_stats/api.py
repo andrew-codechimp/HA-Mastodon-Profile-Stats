@@ -44,15 +44,6 @@ class MastodonProfileStatsApiClient:
             method="get", url="https://jsonplaceholder.typicode.com/posts/1"
         )
 
-    async def async_set_title(self, value: str) -> any:
-        """Get data from the API."""
-        return await self._api_wrapper(
-            method="patch",
-            url="https://jsonplaceholder.typicode.com/posts/1",
-            data={"title": value},
-            headers={"Content-type": "application/json; charset=UTF-8"},
-        )
-
     async def _api_wrapper(
         self,
         method: str,
