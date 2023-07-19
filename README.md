@@ -37,13 +37,13 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ***
 
 [mastodon_profile_stats]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats
-[commits-shield]: https://img.shields.io/github/commit-activity/y/andrew-codechimp/mastodon_profile_stats.svg?style=for-the-badge
-[commits]: https://github.com/andrew-codechimp/mastodon_profile_stats/commits/main
+[commits-shield]: https://img.shields.io/github/commit-activity/y/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
+[commits]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/commits/main
 [hacs]: https://github.com/hacs/integration
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
 [exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/
-[license-shield]: https://img.shields.io/github/license/andrew-codechimp/mastodon_profile_stats.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/andrew-codechimp/mastodon_profile_stats.svg?style=for-the-badge
-[releases]: https://github.com/andrew-codechimp/mastodon_profile_stats/releases
+[license-shield]: https://img.shields.io/github/license/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
+[releases]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/releases
