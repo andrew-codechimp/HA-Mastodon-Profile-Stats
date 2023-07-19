@@ -1,4 +1,4 @@
-"""BlueprintEntity class."""
+"""MastodonProfileStatsEntity class."""
 from __future__ import annotations
 
 from homeassistant.helpers.entity import DeviceInfo
@@ -8,8 +8,8 @@ from .const import ATTRIBUTION, DOMAIN, NAME, VERSION
 from .coordinator import MastodonProfileStatsUpdateCoordinator
 
 
-class IntegrationBlueprintEntity(CoordinatorEntity):
-    """BlueprintEntity class."""
+class MastodonProfileStatsEntity(CoordinatorEntity):
+    """MastodonProfileStatsEntity class."""
 
     _attr_attribution = ATTRIBUTION
 

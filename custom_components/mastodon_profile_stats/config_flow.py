@@ -1,4 +1,4 @@
-"""Adds config flow for Blueprint."""
+"""Adds config flow for MastodonProfileStats."""
 from __future__ import annotations
 
 import voluptuous as vol
@@ -16,8 +16,8 @@ from .api import (
 from .const import DOMAIN, LOGGER
 
 
-class BlueprintFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
-    """Config flow for Blueprint."""
+class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
+    """Config flow for MastodonProfileStats."""
 
     VERSION = 1
 
