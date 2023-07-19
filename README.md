@@ -8,7 +8,7 @@
 
 [![Community Forum][forum-shield]][forum]
 
-_Integration to integrate with [mastodon_profile_stats][mastodon_profile_stats]._
+_Integration to get profile stats from Mastodon instances._
 
 **This integration will set up the following platforms.**
 
