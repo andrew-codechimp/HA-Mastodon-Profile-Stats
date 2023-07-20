@@ -2,20 +2,20 @@
 
 from urllib.parse import urlparse
 
-class MastodonProfile():
+class MastodonProfile:
     """MastodonProfileStats Profile helper class."""
 
     def __init__(
         self,
-        url: str
+        profile_url: str
     ) -> None:
         """Initialize the profile class."""
-        self.url = url
+        self.profile_url = profile_url
 
     @property
     def native_value(self) -> str:
         """Return the native value of the profile."""
-        return self.url
+        return self.profile_url
 
     @property
     def apiurl(self) -> str:
@@ -24,7 +24,7 @@ class MastodonProfile():
         # https://mastodon.online/@codechimp
         # https://mastodon.online/api/v1/accounts/lookup?acct=codechimp
 
-        url_components = urlparse(self.url)
+        url_components = urlparse(self.profile_url)
         api = (url_components.scheme + '://' +
                url_components.netloc +
                '/api/v1/accounts/lookup?acct=' + url_components.path[2:])
@@ -37,7 +37,7 @@ class MastodonProfile():
 
         # https://mastodon.online/@codechimp
 
-        url_components = urlparse(self.url)
+        url_components = urlparse(self.profile_url)
         profile = url_components.path[2:]
 
         return profile

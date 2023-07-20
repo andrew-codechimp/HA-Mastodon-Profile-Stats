@@ -9,7 +9,7 @@ import async_timeout
 
 from homeassistant.const import CONF_URL
 
-from homeassistant.config_entries import ConfigEntry
+# from homeassistant.config_entries import ConfigEntry
 
 class MastodonProfileStatsApiClientError(Exception):
     """Exception to indicate a general API error."""
