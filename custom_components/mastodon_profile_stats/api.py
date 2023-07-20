@@ -7,6 +7,9 @@ import socket
 import aiohttp
 import async_timeout
 
+from homeassistant.const import CONF_URL
+
+from homeassistant.config_entries import ConfigEntry
 
 class MastodonProfileStatsApiClientError(Exception):
     """Exception to indicate a general API error."""
@@ -29,19 +32,18 @@ class MastodonProfileStatsApiClient:
 
     def __init__(
         self,
-        username: str,
-        password: str,
         session: aiohttp.ClientSession,
+        entry,
     ) -> None:
         """Sample API Client."""
-        self._username = username
-        self._password = password
         self._session = session
+        self.config_entry = entry
+        self._url = entry[CONF_URL]
 
     async def async_get_data(self) -> any:
         """Get data from the API."""
         return await self._api_wrapper(
-            method="get", url="https://jsonplaceholder.typicode.com/posts/1"
+            method="get", url=self._url
         )
 
     async def _api_wrapper(
