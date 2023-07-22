@@ -30,6 +30,8 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         _errors = {}
 
         if user_input is not None:
+            # TODO - check if it's a URL or full profile name
+
             # Construct the user profile to derive the api url
             user_profile = MastodonProfile(profile_url=user_input[CONF_URL])
 
