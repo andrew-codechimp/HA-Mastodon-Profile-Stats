@@ -5,7 +5,7 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from homeassistant.const import CONF_URL
 
-from .const import DOMAIN, NAME, VERSION, MANUFACTURER
+from .const import DOMAIN, VERSION, MANUFACTURER
 from .coordinator import MastodonProfileStatsUpdateCoordinator
 from .profile import MastodonProfile
 
