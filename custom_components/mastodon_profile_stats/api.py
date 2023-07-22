@@ -11,6 +11,7 @@ from homeassistant.const import CONF_URL
 
 # from homeassistant.config_entries import ConfigEntry
 
+
 class MastodonProfileStatsApiClientError(Exception):
     """Exception to indicate a general API error."""
 
@@ -19,12 +20,6 @@ class MastodonProfileStatsApiClientCommunicationError(
     MastodonProfileStatsApiClientError
 ):
     """Exception to indicate a communication error."""
-
-
-class MastodonProfileStatsApiClientAuthenticationError(
-    MastodonProfileStatsApiClientError
-):
-    """Exception to indicate an authentication error."""
 
 
 class MastodonProfileStatsApiClient:
@@ -42,9 +37,7 @@ class MastodonProfileStatsApiClient:
 
     async def async_get_data(self) -> any:
         """Get data from the API."""
-        return await self._api_wrapper(
-            method="get", url=self._url
-        )
+        return await self._api_wrapper(method="get", url=self._url)
 
     async def _api_wrapper(
         self,
@@ -62,10 +55,6 @@ class MastodonProfileStatsApiClient:
                     headers=headers,
                     json=data,
                 )
-                if response.status in (401, 403):
-                    raise MastodonProfileStatsApiClientAuthenticationError(
-                        "Invalid credentials",
-                    )
                 response.raise_for_status()
                 return await response.json()
 

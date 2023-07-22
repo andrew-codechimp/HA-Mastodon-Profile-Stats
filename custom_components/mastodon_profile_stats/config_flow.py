@@ -9,7 +9,6 @@ from homeassistant.helpers.aiohttp_client import async_create_clientsession
 
 from .api import (
     MastodonProfileStatsApiClient,
-    MastodonProfileStatsApiClientAuthenticationError,
     MastodonProfileStatsApiClientCommunicationError,
     MastodonProfileStatsApiClientError,
 )
@@ -34,9 +33,6 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 await self._test_url(
                     entry=user_input,
                 )
-            except MastodonProfileStatsApiClientAuthenticationError as exception:
-                LOGGER.warning(exception)
-                _errors["base"] = "auth"
             except MastodonProfileStatsApiClientCommunicationError as exception:
                 LOGGER.error(exception)
                 _errors["base"] = "connection"
@@ -70,7 +66,6 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         """Validate url."""
 
         client = MastodonProfileStatsApiClient(
-            session=async_create_clientsession(self.hass),
-            entry=entry
+            session=async_create_clientsession(self.hass), entry=entry
         )
         await client.async_get_data()

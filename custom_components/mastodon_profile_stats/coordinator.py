@@ -13,7 +13,6 @@ from homeassistant.exceptions import ConfigEntryAuthFailed
 
 from .api import (
     MastodonProfileStatsApiClient,
-    MastodonProfileStatsApiClientAuthenticationError,
     MastodonProfileStatsApiClientError,
 )
 from .const import DOMAIN, LOGGER
@@ -43,7 +42,5 @@ class MastodonProfileStatsUpdateCoordinator(DataUpdateCoordinator):
         """Update data via library."""
         try:
             return await self.client.async_get_data()
-        except MastodonProfileStatsApiClientAuthenticationError as exception:
-            raise ConfigEntryAuthFailed(exception) from exception
         except MastodonProfileStatsApiClientError as exception:
             raise UpdateFailed(exception) from exception

@@ -2,13 +2,11 @@
 
 from urllib.parse import urlparse
 
+
 class MastodonProfile:
     """MastodonProfileStats Profile helper class."""
 
-    def __init__(
-        self,
-        profile_url: str
-    ) -> None:
+    def __init__(self, profile_url: str) -> None:
         """Initialize the profile class."""
         self.profile_url = profile_url
 
@@ -25,9 +23,13 @@ class MastodonProfile:
         # https://mastodon.online/api/v1/accounts/lookup?acct=codechimp
 
         url_components = urlparse(self.profile_url)
-        api = (url_components.scheme + '://' +
-               url_components.netloc +
-               '/api/v1/accounts/lookup?acct=' + url_components.path[2:])
+        api = (
+            url_components.scheme
+            + "://"
+            + url_components.netloc
+            + "/api/v1/accounts/lookup?acct="
+            + url_components.path[2:]
+        )
 
         return api
 
@@ -35,9 +37,21 @@ class MastodonProfile:
     def profile_name(self) -> str:
         """Return the profile name."""
 
-        # https://mastodon.online/@codechimp
+        # https://mastodon.online/@codechimp = codechimp
 
         url_components = urlparse(self.profile_url)
         profile = url_components.path[2:]
 
         return profile
+
+    @property
+    def full_profile_name(self) -> str:
+        """Return the full profile name."""
+
+        # https://mastodon.online/@codechimp = @codechimp@mastodon.online
+
+        url_components = urlparse(self.profile_url)
+        profile = url_components.path[1:]
+        instance = url_components.netloc
+
+        return profile + "@" + instance

@@ -18,6 +18,7 @@ PLATFORMS: list[Platform] = [
     Platform.SENSOR,
 ]
 
+
 # https://developers.home-assistant.io/docs/config_entries_index/#setting-up-an-entry
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up this integration using UI."""
@@ -27,8 +28,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     ] = coordinator = MastodonProfileStatsUpdateCoordinator(
         hass=hass,
         client=MastodonProfileStatsApiClient(
-            session=async_get_clientsession(hass),
-            entry=entry.data
+            session=async_get_clientsession(hass), entry=entry.data
         ),
     )
     # https://developers.home-assistant.io/docs/integration_fetching_data#coordinated-single-api-poll-for-data-for-all-entities

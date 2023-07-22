@@ -17,7 +17,7 @@ _Integration to get profile stats from Mastodon instances._
 
 Platform | Description
 -- | --
-`sensor` | Show info from Mastodon API.
+`sensor` | Show info from Mastodon API, polled every 60 minutes
 
 ## Installation
 
