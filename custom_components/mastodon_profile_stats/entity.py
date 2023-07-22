@@ -5,14 +5,12 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from homeassistant.const import CONF_URL
 
-from .const import ATTRIBUTION, DOMAIN, NAME, VERSION
+from .const import DOMAIN, NAME, VERSION
 from .coordinator import MastodonProfileStatsUpdateCoordinator
 
 
 class MastodonProfileStatsEntity(CoordinatorEntity):
     """MastodonProfileStatsEntity class."""
-
-    _attr_attribution = ATTRIBUTION
 
     def __init__(self, coordinator: MastodonProfileStatsUpdateCoordinator) -> None:
         """Initialize."""
