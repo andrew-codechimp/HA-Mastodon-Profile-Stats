@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.const import CONF_URL
+from homeassistant.const import CONF_URL, CONF_NAME
 from homeassistant.helpers import selector
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
 
@@ -13,6 +13,7 @@ from .api import (
     MastodonProfileStatsApiClientError,
 )
 from .const import DOMAIN, LOGGER
+from .profile import MastodonProfile
 
 
 class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
@@ -29,6 +30,9 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         _errors = {}
 
         if user_input is not None:
+            # Construct the user profile to derive the api url
+            user_profile = MastodonProfile(profile_url=user_input[CONF_URL])
+
             try:
                 await self._test_url(
                     entry=user_input,
@@ -41,7 +45,7 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 _errors["base"] = "unknown"
             else:
                 return self.async_create_entry(
-                    title=user_input[CONF_URL],
+                    title=user_profile.full_profile_name,
                     data=user_input,
                 )
 

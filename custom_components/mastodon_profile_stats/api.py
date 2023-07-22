@@ -9,6 +9,8 @@ import async_timeout
 
 from homeassistant.const import CONF_URL
 
+from .profile import MastodonProfile
+
 # from homeassistant.config_entries import ConfigEntry
 
 
@@ -37,7 +39,11 @@ class MastodonProfileStatsApiClient:
 
     async def async_get_data(self) -> any:
         """Get data from the API."""
-        return await self._api_wrapper(method="get", url=self._url)
+
+        # Construct the user profile to derive the api url
+        user_profile = MastodonProfile(profile_url=self._url)
+
+        return await self._api_wrapper(method="get", url=user_profile.apiurl)
 
     async def _api_wrapper(
         self,

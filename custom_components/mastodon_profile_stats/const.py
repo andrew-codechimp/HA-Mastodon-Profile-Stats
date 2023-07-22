@@ -6,3 +6,4 @@ LOGGER: Logger = getLogger(__package__)
 NAME = "Mastodon Profile Stats"
 DOMAIN = "mastodon_profile_stats"
 VERSION = "0.1.0"
+MANUFACTURER = "@Andrew-CodeChimp"
