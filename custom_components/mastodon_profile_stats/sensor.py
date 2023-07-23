@@ -12,17 +12,17 @@ from .profile import MastodonProfile
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
         key="followers_count",
-        name="Followers Count",
+        name="Followers",
         icon="mdi:counter",
     ),
     SensorEntityDescription(
         key="following_count",
-        name="Following Count",
+        name="Following",
         icon="mdi:counter",
     ),
     SensorEntityDescription(
         key="statuses_count",
-        name="Statuses Count",
+        name="Statuses",
         icon="mdi:counter",
     ),
 )
