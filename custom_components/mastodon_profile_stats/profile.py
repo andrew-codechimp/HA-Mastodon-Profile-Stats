@@ -6,9 +6,22 @@ from urllib.parse import urlparse
 class MastodonProfile:
     """MastodonProfileStats Profile helper class."""
 
-    def __init__(self, profile_url: str) -> None:
-        """Initialize the profile class."""
-        self.profile_url = profile_url
+    def __init__(self, any_profile: str) -> None:
+        """Initialize the profile class using either the url or full profile name."""
+        if self.url_validator(any_profile):
+            self.profile_url = any_profile
+        else:
+            components = any_profile.split("@")
+            if len(components) == 3:
+                self.profile_url = f"https://{components[2]}/@{components[1]}"
+
+    def url_validator(self, url_to_validate) -> bool:
+        """Is the value a url."""
+        try:
+            result = urlparse(url_to_validate)
+            return all([result.scheme, result.netloc])
+        except ValueError:
+            return False
 
     @property
     def native_value(self) -> str:

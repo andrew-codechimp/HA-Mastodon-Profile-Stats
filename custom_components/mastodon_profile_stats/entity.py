@@ -19,7 +19,7 @@ class MastodonProfileStatsEntity(CoordinatorEntity):
 
         # Construct the user profile to derive the api url
         user_profile = MastodonProfile(
-            profile_url=coordinator.config_entry.data.get(CONF_URL)
+            any_profile=coordinator.config_entry.data.get(CONF_URL)
         )
 
         self._attr_unique_id = coordinator.config_entry.entry_id

@@ -11,8 +11,6 @@ from homeassistant.const import CONF_URL
 
 from .profile import MastodonProfile
 
-# from homeassistant.config_entries import ConfigEntry
-
 
 class MastodonProfileStatsApiClientError(Exception):
     """Exception to indicate a general API error."""
@@ -41,7 +39,7 @@ class MastodonProfileStatsApiClient:
         """Get data from the API."""
 
         # Construct the user profile to derive the api url
-        user_profile = MastodonProfile(profile_url=self._url)
+        user_profile = MastodonProfile(any_profile=self._url)
 
         return await self._api_wrapper(method="get", url=user_profile.apiurl)
 

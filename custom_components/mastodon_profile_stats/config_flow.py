@@ -30,10 +30,9 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         _errors = {}
 
         if user_input is not None:
-            # TODO - check if it's a URL or full profile name
-
-            # Construct the user profile to derive the api url
-            user_profile = MastodonProfile(profile_url=user_input[CONF_URL])
+            # Construct the user profile
+            user_profile = MastodonProfile(any_profile=user_input[CONF_URL])
+            user_input[CONF_URL] = user_profile.profile_url
 
             try:
                 await self._test_url(
@@ -70,6 +69,8 @@ class MastodonProfileStatsFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
 
     async def _test_url(self, entry) -> None:
         """Validate url."""
+
+        # _LOGGER.debug(f"Profile {entry}")
 
         client = MastodonProfileStatsApiClient(
             session=async_create_clientsession(self.hass), entry=entry

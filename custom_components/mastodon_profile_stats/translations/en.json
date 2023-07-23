@@ -4,7 +4,7 @@
             "user": {
                 "description": "If you need help with the configuration have a look here: https://github.com/andrew-codechimp/ha-mastodon-profile-stats",
                 "data": {
-                    "url": "Profile URL"
+                    "url": "Profile (either @username@instance or full url)"
                 }
             }
         },

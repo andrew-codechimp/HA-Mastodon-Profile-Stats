@@ -53,7 +53,7 @@ class MastodonProfileStatsSensor(MastodonProfileStatsEntity, SensorEntity):
 
         # Construct the user profile to derive the api url
         user_profile = MastodonProfile(
-            profile_url=self.coordinator.config_entry.data.get(CONF_URL)
+            any_profile=self.coordinator.config_entry.data.get(CONF_URL)
         )
 
         self._attr_unique_id = f"mastodon_profile_stats_{user_profile.full_profile_name}_{entity_description.key}".lower()
