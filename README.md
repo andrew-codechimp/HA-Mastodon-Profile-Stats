@@ -8,29 +8,50 @@
 
 [![Community Forum][forum-shield]][forum]
 
-
-**This integration is under early development, unless you see a release I'd advise not trying it.**
-
 _Integration to get profile stats from Mastodon instances._
 
 **This integration will set up the following platforms.**
 
 Platform | Description
 -- | --
-`sensor` | Show info from Mastodon API, polled every 60 minutes
+`sensor` | Show info from Mastodon profile API, polled every 60 minutes
+
+## Sensors
+
+| Sensor      | Description                                                                                                                                                                                                               |
+| :------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_followers_count`    | Number of followers                                                                                                                                                                                              |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_following_count` | Number of following                                                                                                      |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_statuses_count`     | Number of posts |
 
 ## Installation
 
-1. Using the tool of choice open the directory (folder) for your HA configuration (where you find `configuration.yaml`).
-1. If you do not have a `custom_components` directory (folder) there, you need to create it.
-1. In the `custom_components` directory (folder) create a new folder called `mastodon_profile_stats`.
-1. Download _all_ the files from the `custom_components/mastodon_profile_stats/` directory (folder) in this repository.
-1. Place the files you downloaded in the new directory (folder) you created.
+### HACS
+
+1. Make sure the [HACS](https://github.com/custom-components/hacs) component is installed and working.
+1. Add the project repository `https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats` as a custom repository to HACS, see: https://hacs.xyz/docs/faq/custom_repositories
+1. Search for `Mastodon Profile Stats` in HACS and install it under the "Integrations" category.
 1. Restart Home Assistant
 1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Mastodon Profile Stats"
 
+### Manual Installation
+
+<details>
+<summary>Show detailed instructions</summary>
+
+Installation via HACS is recommended, but a manual setup is supported.
+
+1. Manually copy custom_components/mastodon_profile_stats folder from latest release to custom_components folder in your config folder.
+1. Restart Home Assistant.
+1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Mastodon Profile Stats"
+
+</details>
+
 ## Configuration is done in the UI
 
+Add a profile via either @profilename@mastodoninstance or the url
+
+Multiple profiles are supported
 <!---->
 
 ## Contributions are welcome!
