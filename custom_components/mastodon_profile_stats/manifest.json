@@ -4,12 +4,12 @@
   "codeowners": [
     "@andrew-codechimp"
   ],
-  "dependencies": [],
-  "requirements": [],
   "config_flow": true,
+  "dependencies": [],
   "documentation": "https://github.com/andrew-codechimp/ha-mastodon_profile_stats",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/andrew-codechimp/ha-mastodon_profile_stats/issues",
+  "requirements": [],
   "version": "1.0.4"
 }
