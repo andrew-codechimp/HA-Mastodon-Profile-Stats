@@ -8,7 +8,9 @@
 
 [![Community Forum][forum-shield]][forum]
 
-_Integration to get profile stats from Mastodon instances._
+_Integration to get profile stats from Mastodon instances (multiple supported)._
+
+![Mastodon Profile Stats](images/screenshot-device.png "Mastodon Profile Stats")
 
 **This integration will set up the following platforms.**
 
