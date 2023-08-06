@@ -10,7 +10,8 @@
 
 _Integration to get profile stats from Mastodon instances (multiple supported)._
 
-![Mastodon Profile Stats](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/images/screenshot-device.png "Mastodon Profile Stats")
+![Mastodon Profile Stats](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/blob/main/images/screenshot-device.png "Mastodon Profile Stats")
+
 
 **This integration will set up the following platforms.**
 
