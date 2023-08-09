@@ -54,7 +54,7 @@ Installation via HACS is recommended, but a manual setup is supported.
 
 Add a profile via either @profilename@mastodoninstance or the url
 
-Multiple profiles are supported
+Multiple profiles are supported and the stats are updated every 60 minutes
 <!---->
 
 ## Contributions are welcome!
