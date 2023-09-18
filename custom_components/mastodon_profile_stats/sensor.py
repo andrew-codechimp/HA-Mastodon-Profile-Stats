@@ -12,19 +12,19 @@ from .profile import MastodonProfile
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
         key="followers_count",
-        name="Followers",
+        translation_key="followers",
         icon="mdi:counter",
         state_class = SensorStateClass.TOTAL,
     ),
     SensorEntityDescription(
         key="following_count",
-        name="Following",
+        translation_key="following",
         icon="mdi:counter",
         state_class = SensorStateClass.TOTAL,
     ),
     SensorEntityDescription(
         key="statuses_count",
-        name="Statuses",
+        translation_key="statuses",
         icon="mdi:counter",
         state_class = SensorStateClass.TOTAL,
     ),
