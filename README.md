@@ -23,9 +23,9 @@ Platform | Description
 
 | Sensor      | Description                                                                                                                                                                                                               |
 | :------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[PROFILE NAME]_[MASTODON INSTANCE]_followers_count`    | Number of followers                                                                                                                                                                                              |
-| `[PROFILE NAME]_[MASTODON INSTANCE]_following_count` | Number of following                                                                                                      |
-| `[PROFILE NAME]_[MASTODON INSTANCE]_statuses_count`     | Number of posts |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_followers`    | Number of followers                                                                                                                                                                                              |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_following` | Number of following                                                                                                      |
+| `[PROFILE NAME]_[MASTODON INSTANCE]_statuses`     | Number of posts |
 
 ## Installation
 
