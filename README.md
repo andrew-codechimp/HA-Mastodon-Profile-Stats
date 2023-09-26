@@ -31,6 +31,8 @@ Platform | Description
 
 ### HACS
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=andrew-codechimp&repository=HA-Mastodon-Profile-Stats&category=Integration)
+
 1. Make sure the [HACS](https://github.com/custom-components/hacs) component is installed and working.
 1. Add the project repository `https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats` as a custom repository to HACS, see: https://hacs.xyz/docs/faq/custom_repositories
 1. Search for `Mastodon Profile Stats` in HACS and install it under the "Integrations" category.
