@@ -33,11 +33,10 @@ Platform | Description
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=andrew-codechimp&repository=HA-Mastodon-Profile-Stats&category=Integration)
 
-1. Make sure the [HACS](https://github.com/custom-components/hacs) component is installed and working.
-1. Add the project repository `https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats` as a custom repository to HACS, see: https://hacs.xyz/docs/faq/custom_repositories
-1. Search for `Mastodon Profile Stats` in HACS and install it under the "Integrations" category.
-1. Restart Home Assistant
-1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Mastodon Profile Stats"
+Or  
+Search for `Mastodon Profile Stats` in HACS and install it under the "Integrations" category.  
+Restart Home Assistant  
+In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Mastodon Profile Stats"  
 
 ### Manual Installation
 
@@ -69,7 +68,7 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 [commits-shield]: https://img.shields.io/github/commit-activity/y/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
 [commits]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/commits/main
 [hacs]: https://github.com/hacs/integration
-[hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
+[hacsbadge]: https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=for-the-badge
 [exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/t/custom-component-mastodon-profile-stats/601024
