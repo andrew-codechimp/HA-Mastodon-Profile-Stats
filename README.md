@@ -3,12 +3,15 @@
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE)
-
 [![hacs][hacsbadge]][hacs]
-
 [![Community Forum][forum-shield]][forum]
 
-_Integration to get profile stats from Mastodon instances (multiple supported)._
+[![BuyMeACoffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee&style=for-the-badge)](https://www.buymeacoffee.com/codechimp)
+
+
+Integration to get profile stats from Mastodon instances (multiple supported).
+
+*Please :star: this repo if you find it useful*
 
 ![Mastodon Profile Stats](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/blob/main/images/screenshot-device.png "Mastodon Profile Stats")
 
@@ -57,6 +60,9 @@ Add a profile via either @profilename@mastodoninstance or the url
 
 Multiple profiles are supported and the stats are updated every 60 minutes
 <!---->
+
+If you find this useful and want to show your support  
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/codechimp)
 
 ## Contributions are welcome!
 
