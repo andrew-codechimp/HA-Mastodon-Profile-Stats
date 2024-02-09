@@ -6,6 +6,6 @@
 files: [
   {
     "source": "/custom_components/mastodon_profile_stats/translations/en.json",
-    "translation": "/custom_components/mastodon_profile_stats/translations/%two_letters_code%.json",
+    "translation": "/custom_components/mastodon_profile_stats/translations/%locale%.json",
   }
 ]
