@@ -71,7 +71,7 @@ You can help by adding missing translations when you are a native speaker. Or ad
 
 Mastodon Profile Stats uses Crowdin to make contributing easy.
 
-## Changing or adding to existing language
+### Changing or adding to existing language
 
 First register and join the translation project
 
@@ -89,7 +89,7 @@ Next translate a string
 
 Mastodon Profile Stats will automatically pull in latest changes to translations every day and create a Pull Request. After that is reviewed by a maintainer it will be included in the next release of Battery Notes.
 
-## Adding a new language
+### Adding a new language
 
 Create an [Issue](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/issues/new?template=new_language_request.yml&title=New+Language) requesting a new language. We will do the necessary work to add the new translation to the integration and Crowdin site, when it's ready for you to contribute we'll comment on the issue you raised.
 
