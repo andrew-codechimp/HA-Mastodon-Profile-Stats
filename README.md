@@ -71,6 +71,9 @@ You can help by adding missing translations when you are a native speaker. Or ad
 
 Mastodon Profile Stats uses Crowdin to make contributing easy.
 
+<details>
+<summary>Show detailed instructions</summary>
+
 ### Changing or adding to existing language
 
 First register and join the translation project
@@ -92,7 +95,7 @@ Mastodon Profile Stats will automatically pull in latest changes to translations
 ### Adding a new language
 
 Create an [Issue](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/issues/new?template=new_language_request.yml&title=New+Language) requesting a new language. We will do the necessary work to add the new translation to the integration and Crowdin site, when it's ready for you to contribute we'll comment on the issue you raised.
-
+</details>
 
 ## Contributions are welcome!
 
