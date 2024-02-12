@@ -2,16 +2,16 @@
     "config": {
         "step": {
             "user": {
-                "description": "If you need help with the configuration have a look here: https://github.com/andrew-codechimp/ha-mastodon-profile-stats",
+                "description": "Hilfe zur Konfiguration findest du unter: https://github.com/andrew-codechimp/ha-mastodon-profile-stats",
                 "data": {
-                    "url": "Profile (either @username@instance or full url)"
+                    "url": "Profil (entweder @username@instance oder vollständige Url)"
                 }
             }
         },
         "error": {
-            "auth": "Username/Password is wrong.",
-            "connection": "Unable to connect to the server.",
-            "unknown": "Unknown error occurred."
+            "auth": "Benutzername/Passwort ist falsch.",
+            "connection": "Kann keine Verbindung zum Server herstellen.",
+            "unknown": "Ein unbekannter Fehler ist aufgetreten."
         }
     },
     "entity": {
