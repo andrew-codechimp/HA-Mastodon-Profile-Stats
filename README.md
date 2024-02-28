@@ -6,12 +6,13 @@
 [![hacs][hacsbadge]][hacs]
 [![Community Forum][forum-shield]][forum]
 
-[![BuyMeACoffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee&style=for-the-badge)](https://www.buymeacoffee.com/codechimp)
-
 
 Integration to get profile stats from Mastodon instances (multiple supported).
 
 *Please :star: this repo if you find it useful*
+*If you want to show your support please*
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/codechimp)
 
 ![Mastodon Profile Stats](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/blob/main/images/screenshot-device.png "Mastodon Profile Stats")
 
