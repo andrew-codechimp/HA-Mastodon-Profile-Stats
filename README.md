@@ -9,7 +9,7 @@
 
 Integration to get profile stats from Mastodon instances (multiple supported).
 
-*Please :star: this repo if you find it useful*
+*Please :star: this repo if you find it useful*  
 *If you want to show your support please*
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/codechimp)
