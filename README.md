@@ -2,6 +2,7 @@
 
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
+[![Downloads][download-latest-shield]](Downloads)
 [![License][license-shield]](LICENSE)
 [![hacs][hacsbadge]][hacs]
 [![Community Forum][forum-shield]][forum]
@@ -115,3 +116,4 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 [license-shield]: https://img.shields.io/github/license/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/andrew-codechimp/HA-Mastodon-Profile-Stats.svg?style=for-the-badge
 [releases]: https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/releases
+[download-latest-shield]: https://img.shields.io/github/downloads/andrew-codechimp/ha-mastodon-profile-stats/latest/total?style=for-the-badge
