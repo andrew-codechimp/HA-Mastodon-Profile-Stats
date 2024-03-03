@@ -1,9 +1,12 @@
 """Constants for mastodon_profile_stats."""
+
 import json
 from logging import Logger, getLogger
 from pathlib import Path
 
 LOGGER: Logger = getLogger(__package__)
+
+MIN_HA_VERSION = "2023.12"
 
 manifestfile = Path(__file__).parent / "manifest.json"
 with open(file=manifestfile, encoding="UTF-8") as json_file:
