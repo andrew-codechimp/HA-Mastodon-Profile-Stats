@@ -92,7 +92,7 @@ Next translate a string
 - Fill in or modify the translation and click Save.
 - Repeat for other translations.
 
-Mastodon Profile Stats will automatically pull in latest changes to translations every day and create a Pull Request. After that is reviewed by a maintainer it will be included in the next release of Battery Notes.
+GitHub will automatically pull in latest changes to translations every day and create a Pull Request. After that is reviewed by a maintainer it will be included in the next release of Mastodon Profile Stats.
 
 ### Adding a new language
 
