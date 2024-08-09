@@ -39,6 +39,12 @@ async def async_setup(
         LOGGER.critical(msg)
         return False
 
+    LOGGER.warning(
+        "This integration has been discontinued, "
+        "please remove the integration, delete within HACS and use the official "
+        "integration https://www.home-assistant.io/integrations/mastodon"
+    )
+
     return True
 
 
