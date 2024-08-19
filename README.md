@@ -67,41 +67,6 @@ If you find this useful and want to show your support
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/codechimp)
 
-## Translations
-
-You can help by adding missing translations when you are a native speaker. Or add a complete new language when there is no language file available.
-
-Mastodon Profile Stats uses Crowdin to make contributing easy.
-
-<details>
-<summary>Show detailed instructions</summary>
-
-### Changing or adding to existing language
-
-First register and join the translation project
-
-- If you don’t have a Crowdin account yet, create one at [https://crowdin.com](https://crowdin.com)
-- Go to the [Mastodon Profile Stats Crowdin project page](https://crowdin.com/project/mastodon-profile-stats)
-- Click Join.
-
-Next translate a string
-
-- Select the language you want to contribute to from the dashboard.
-- Click Translate All.
-- Find the string you want to edit, missing translation are marked red.
-- Fill in or modify the translation and click Save.
-- Repeat for other translations.
-
-GitHub will automatically pull in latest changes to translations every day and create a Pull Request. After that is reviewed by a maintainer it will be included in the next release of Mastodon Profile Stats.
-
-### Adding a new language
-
-Create an [Issue](https://github.com/andrew-codechimp/HA-Mastodon-Profile-Stats/issues/new?template=new_language_request.yml&title=New+Language) requesting a new language. We will do the necessary work to add the new translation to the integration and Crowdin site, when it's ready for you to contribute we'll comment on the issue you raised.
-</details>
-
-## Contributions are welcome!
-
-If you want to contribute to this please read the [Contribution guidelines](CONTRIBUTING.md)
 
 ***
 
